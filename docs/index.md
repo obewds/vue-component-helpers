@@ -6,14 +6,9 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
-
-
 # @obewds/vue-component-helpers
 
-Welcome to the docs page for OBE:WDS's `VueComponentHelpers.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `vue-component-helpers` functions for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -27,104 +22,58 @@ npm install @obewds/vue-component-helpers --save-dev
 
 
 
-## Import Component
+## isEmptyElement()
 
 
 
+### Properties
 
-### Template syntax
+:arrow_right: - Accepts a single `String` argument
+:arrow_left: - Returns a `Boolean` value  
 
-```html{2}
-<template>
-    <VueComponentHelpers/>
-</template>
-```
+### Use
 
-
-
-
-### Script setup syntax
-
-```html{2}
+```html{3,5}
 <script setup lang="ts">
-    import { VueComponentHelpers } from '@obewds/vue-component-helpers'
+
+    import { isEmptyElement } from '@obewds/vue-component-helpers'
+
+    const isBrEmpty = isEmptyElement('br')
+    console.log(isBrEmpty) // returns true
+
+    const isDivEmpty = isEmptyElement('div')
+    console.log(isBrEmpty) // returns false
+
 </script>
 ```
 
 
 
 
-### Composition API syntax
+## isUnsupportedElement()
 
-```html{3,6}
-<script lang="ts">
-    import { defineComponent } from 'vue'
-    import { VueComponentHelpers } from '@obewds/vue-component-helpers'
 
-    export default defineComponent({
-        components: { VueComponentHelpers }
-    })
+
+### Properties
+
+:arrow_right: - Accepts a single `String` argument
+:arrow_left: - Returns a `Boolean` value  
+
+### Use
+
+```html{3,5}
+<script setup lang="ts">
+
+    import { isUnsupportedElement } from '@obewds/vue-component-helpers'
+
+    const isBodyUnsupported = isUnsupportedElement('body')
+    console.log(isBodyUnsupported) // returns true
+
+    const isDivUnsupported = isUnsupportedElement('div')
+    console.log(isDivUnsupported) // returns false
+
 </script>
 ```
-
-
-
-
-## Props
-
-
-
-
-### text
-
-:white_check_mark: - Type `String`  
-:x: - Not Required  
-:x: - Doesn't Validate
-
-
-```html{2}
-<template>
-    <VueComponentHelpers text="My text prop string"/>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My text prop string</div>
-```
-
-::: warning
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
-
-
-
-
-## Slots
-
-
-
-
-### default
-
-```html{2-4}
-<template>
-    <VueComponentHelpers>
-        My slot content
-    </VueComponentHelpers>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My slot content</div>
-```
-
-::: danger
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
 
 
 
