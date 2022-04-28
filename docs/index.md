@@ -28,7 +28,7 @@ npm install @obewds/vue-component-helpers --save-dev
 
 ### Properties
 
-:arrow_right: - Accepts a single `String` argument
+:arrow_right: - Accepts a single `String` argument  
 :arrow_left: - Returns a `Boolean` value  
 
 ### Use
@@ -56,7 +56,7 @@ npm install @obewds/vue-component-helpers --save-dev
 
 ### Properties
 
-:arrow_right: - Accepts a single `String` argument
+:arrow_right: - Accepts a single `String` argument  
 :arrow_left: - Returns a `Boolean` value  
 
 ### Use
