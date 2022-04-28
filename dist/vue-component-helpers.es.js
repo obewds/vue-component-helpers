@@ -33,6 +33,11 @@ function isEmptyElement(tag) {
     return false;
   }
 }
+function isEmptyOrUnsupportedElement(tag) {
+  const isTagEmpty = isEmptyElement(tag);
+  const isTagUnsupported = isUnsupportedElement(tag);
+  return isTagEmpty || isTagUnsupported ? true : false;
+}
 function isUnsupportedElement(tag) {
   const isUnsupportedElement2 = unsupportedElementTags.includes(tag);
   if (isUnsupportedElement2) {
@@ -42,4 +47,4 @@ function isUnsupportedElement(tag) {
     return false;
   }
 }
-export { isEmptyElement, isUnsupportedElement };
+export { isEmptyElement, isEmptyOrUnsupportedElement, isUnsupportedElement };
