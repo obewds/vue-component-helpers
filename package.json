@@ -12,8 +12,7 @@
     ".": {
       "import": "./dist/vue-component-helpers.es.js",
       "require": "./dist/vue-component-helpers.umd.js"
-    },
-    "./src": "./src/components/VueComponentHelpers.vue"
+    }
   },
   "files": [
     "dist",
@@ -84,5 +83,8 @@
     "vue3",
     "Vue.js",
     "Tailwind CSS"
-  ]
+  ],
+  "dependencies": {
+    "@obewds/vue-validators": "^0.2.1"
+  }
 }

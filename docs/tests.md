@@ -28,4 +28,14 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 
 ## Vitest Tests
 
-<<< @/../tests/VueComponentHelpers.test.js
+
+
+### is-empty-element.test.js
+
+<<< @/../tests/is-empty-element.test.js
+
+
+
+### is-unsupported-element.test.js
+
+<<< @/../tests/is-unsupported-element.test.js
