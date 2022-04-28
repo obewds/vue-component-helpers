@@ -3,9 +3,11 @@ import { isUnsupportedElement } from '../index'
 
 export default function(tag: string): boolean {
 
-    const isTagEmpty = isEmptyElement(tag)
+    const t = (tag).toLowerCase()
+    
+    const isTagEmpty = isEmptyElement(t)
 
-    const isTagUnsupported = isUnsupportedElement(tag)
+    const isTagUnsupported = isUnsupportedElement(t)
 
     return (isTagEmpty || isTagUnsupported) ? true : false
 

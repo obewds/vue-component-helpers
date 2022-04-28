@@ -2,7 +2,9 @@ import { emptyElementTags } from '@obewds/vue-validators'
 
 export default function(tag: string): boolean {
 
-    const isEmptyElement = (emptyElementTags).includes(tag)
+    const t = (tag).toLowerCase()
+
+    const isEmptyElement = (emptyElementTags).includes(t)
 
     if (isEmptyElement) {
 
