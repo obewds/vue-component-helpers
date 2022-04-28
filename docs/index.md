@@ -26,12 +26,19 @@ npm install @obewds/vue-component-helpers --save-dev
 
 
 
-### Properties
+### Parameters
 
-:arrow_right: - Accepts a single `String` argument  
-:arrow_left: - Returns a `Boolean` value  
+:arrow_right: Requires a single `String` (HTML tag name) argument  
 
-### Use
+| Paramater | Type      | Required  | Description |
+|-----------|-----------|-----------|-------------|
+| **tag**   | `String`  | Yes       | Expects a single HTML tag name |
+
+### Returns
+
+:arrow_left: Returns a `Boolean` value  
+
+### Example
 
 ```html{3,5}
 <script setup lang="ts">
@@ -50,16 +57,61 @@ npm install @obewds/vue-component-helpers --save-dev
 
 
 
+## isEmptyOrUnsupportedElement()
+
+
+
+### Parameters
+
+:arrow_right: Requires a single `String` (HTML tag name) argument  
+
+| Paramater | Type      | Required  | Description |
+|-----------|-----------|-----------|-------------|
+| **tag**   | `String`  | Yes       | Expects a single HTML tag name |
+
+### Returns
+
+:arrow_left: Returns a `Boolean` value  
+
+### Example
+
+```html{3,5}
+<script setup lang="ts">
+
+    import { isEmptyOrUnsupportedElement } from '@obewds/vue-component-helpers'
+
+    const isBrEmpty = isEmptyOrUnsupportedElement('br')
+    console.log(isBrEmpty) // returns true
+
+    const isBodyUnsupported = isEmptyOrUnsupportedElement('body')
+    console.log(isBodyUnsupported) // returns true
+
+    const isDivEmpty = isEmptyOrUnsupportedElement('div')
+    console.log(isBrEmpty) // returns false
+
+</script>
+```
+
+
+
+
 ## isUnsupportedElement()
 
 
 
-### Properties
+### Parameters
 
-:arrow_right: - Accepts a single `String` argument  
-:arrow_left: - Returns a `Boolean` value  
+:arrow_right: Requires a single `String` (HTML tag name) argument  
 
-### Use
+| Paramater | Type      | Required  | Description |
+|-----------|-----------|-----------|-------------|
+| **tag**   | `String`  | Yes       | Expects a single HTML tag name |
+
+### Returns
+
+:arrow_left: Returns a `Boolean` value  
+
+### Example
 
 ```html{3,5}
 <script setup lang="ts">

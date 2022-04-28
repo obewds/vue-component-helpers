@@ -2,7 +2,9 @@ import { unsupportedElementTags } from '@obewds/vue-validators'
 
 export default function(tag: string): boolean {
 
-    const isUnsupportedElement = (unsupportedElementTags).includes(tag)
+    const t = (tag).toLowerCase()
+
+    const isUnsupportedElement = (unsupportedElementTags).includes(t)
 
     if (isUnsupportedElement) {
 
