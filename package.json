@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-component-helpers",
   "description": "The official OBE:WDS Vite/Vue TypeScript component package development kit with Tailwind CSS, VitePress and Vitest integrations",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vue-component-helpers#readme",
   "license": "MIT",
@@ -59,9 +59,9 @@
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.6.4",
-    "vite": "^2.9.6",
+    "vite": "^2.9.7",
     "vitepress": "^0.22.3",
-    "vitest": "^0.10.0",
+    "vitest": "^0.10.1",
     "vue": "^3.2.33",
     "vue-tsc": "^0.34.11"
   },
@@ -85,6 +85,6 @@
     "Tailwind CSS"
   ],
   "dependencies": {
-    "@obewds/vue-validators": "^0.2.1"
+    "@obewds/vue-validators": "^0.3.0"
   }
 }
