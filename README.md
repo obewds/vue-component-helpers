@@ -1,6 +1,6 @@
 # vue-component-helpers
 
-The official OBE:WDS Vite/Vue TypeScript component package development kit with Tailwind CSS, VitePress and Vitest integrations
+The @obewds/vue-component-helpers modular design system component for Vue.js
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/obewds/vue-component-helpers?label=Github&logo=github&style=for-the-badge) &nbsp; ![npm](https://img.shields.io/npm/v/@obewds/vue-component-helpers?color=%23cc3534&logo=npm&style=for-the-badge)
 
