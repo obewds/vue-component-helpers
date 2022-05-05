@@ -19,12 +19,133 @@ Welcome to the docs page for OBE:WDS's `vue-component-helpers` functions for [Vu
 npm install @obewds/vue-component-helpers --save-dev
 ```
 
+<br>
+
+
+
+
+
+
+## getBgPaletteColor()
+
+### Parameters
+
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt;) argument  
+:arrow_right: Requires a single `String` (Background Palette Prop Value) argument  
+:arrow_right: Requires a single `String` (Background Palette Color Prop Value) argument  
+
+| Paramater           | Type      | Required  | Description |
+|---------------------|-----------|-----------|-------------|
+| **ObewdsTwConfig**  | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **Bg Palette Prop** | `String`  | Yes       | Expects a Background Palette Prop Value |
+| **Bg Color Prop**   | `String`  | Yes       | Expects a Background Palette Color Prop Value |
+
+### Returns
+
+:arrow_left: Returns a `String` value  
+
+### Example
+
+```html{5,7}
+<script setup lang="ts">
+
+    // import the default config object
+    import { ObewdsTwConfig } from '@obewds/obewds-tw-config'
+    import { getBgPaletteColor } from '@obewds/vue-component-helpers'
+
+    const bgPrimaryColor = getBgPaletteColor(ObewdsTwConfig, 'default', 'primary')
+
+    console.log(bgPrimaryColor) // returns a string of primary background CSS classes
+
+</script>
+```
+
+<br>
+
+
+
+
+## getBorderPaletteColor()
+
+### Parameters
+
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt;) argument  
+:arrow_right: Requires a single `String` (Border Palette Prop Value) argument  
+:arrow_right: Requires a single `String` (Border Palette Color Prop Value) argument  
+
+| Paramater               | Type      | Required  | Description |
+|-------------------------|-----------|-----------|-------------|
+| **ObewdsTwConfig**      | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **Border Palette Prop** | `String`  | Yes       | Expects a Border Palette Prop Value |
+| **Border Color Prop**   | `String`  | Yes       | Expects a Border Palette Color Prop Value |
+
+### Returns
+
+:arrow_left: Returns a `String` value  
+
+### Example
+
+```html{5,7}
+<script setup lang="ts">
+
+    // import the default config object
+    import { ObewdsTwConfig } from '@obewds/obewds-tw-config'
+    import { getBorderPaletteColor } from '@obewds/vue-component-helpers'
+
+    const borderPrimaryColor = getBorderPaletteColor(ObewdsTwConfig, 'default', 'primary')
+
+    console.log(borderPrimaryColor) // returns a string of primary background CSS classes
+
+</script>
+```
+
+<br>
+
+
+
+
+## getTextPaletteColor()
+
+### Parameters
+
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt;) argument  
+:arrow_right: Requires a single `String` (Text Palette Prop Value) argument  
+:arrow_right: Requires a single `String` (Text Palette Color Prop Value) argument  
+
+| Paramater             | Type      | Required  | Description |
+|-----------------------|-----------|-----------|-------------|
+| **ObewdsTwConfig**    | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **Text Palette Prop** | `String`  | Yes       | Expects a Text Palette Prop Value |
+| **Text Color Prop**   | `String`  | Yes       | Expects a Text Palette Color Prop Value |
+
+### Returns
+
+:arrow_left: Returns a `String` value  
+
+### Example
+
+```html{5,7}
+<script setup lang="ts">
+
+    // import the default config object
+    import { ObewdsTwConfig } from '@obewds/obewds-tw-config'
+    import { getTextPaletteColor } from '@obewds/vue-component-helpers'
+
+    const textPrimaryColor = getTextPaletteColor(ObewdsTwConfig, 'default', 'primary')
+
+    console.log(textPrimaryColor) // returns a string of primary background CSS classes
+
+</script>
+```
+
+<br>
+
+
+
 
 
 
 ## isEmptyElement()
-
-
 
 ### Parameters
 
@@ -54,12 +175,13 @@ npm install @obewds/vue-component-helpers --save-dev
 </script>
 ```
 
+<br>
+
+
 
 
 
 ## isEmptyOrUnsupportedElement()
-
-
 
 ### Parameters
 
@@ -92,12 +214,14 @@ npm install @obewds/vue-component-helpers --save-dev
 </script>
 ```
 
+<br>
+
+
+
 
 
 
 ## isUnsupportedElement()
-
-
 
 ### Parameters
 
@@ -126,6 +250,10 @@ npm install @obewds/vue-component-helpers --save-dev
 
 </script>
 ```
+
+<br>
+
+
 
 
 

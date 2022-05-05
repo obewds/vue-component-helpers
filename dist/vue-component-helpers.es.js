@@ -1,3 +1,27 @@
+function getBgPaletteColor(config, palette, color) {
+  var _a, _b, _c, _d;
+  if (config && ((_d = (_c = (_b = (_a = config == null ? void 0 : config.bg) == null ? void 0 : _a.palettes) == null ? void 0 : _b[palette]) == null ? void 0 : _c.colors) == null ? void 0 : _d[color])) {
+    return config.bg.palettes[palette].colors[color];
+  } else {
+    return "";
+  }
+}
+function getBorderPaletteColor(config, palette, color) {
+  var _a, _b, _c, _d;
+  if (config && ((_d = (_c = (_b = (_a = config == null ? void 0 : config.border) == null ? void 0 : _a.palettes) == null ? void 0 : _b[palette]) == null ? void 0 : _c.colors) == null ? void 0 : _d[color])) {
+    return config.border.palettes[palette].colors[color];
+  } else {
+    return "";
+  }
+}
+function getTextPaletteColor(config, palette, color) {
+  var _a, _b, _c, _d;
+  if (config && ((_d = (_c = (_b = (_a = config == null ? void 0 : config.text) == null ? void 0 : _a.palettes) == null ? void 0 : _b[palette]) == null ? void 0 : _c.colors) == null ? void 0 : _d[color])) {
+    return config.text.palettes[palette].colors[color];
+  } else {
+    return "";
+  }
+}
 var emptyElementTags = [
   "area",
   "base",
@@ -50,4 +74,4 @@ function isUnsupportedElement(tag) {
     return false;
   }
 }
-export { isEmptyElement, isEmptyOrUnsupportedElement, isUnsupportedElement };
+export { getBgPaletteColor, getBorderPaletteColor, getTextPaletteColor, isEmptyElement, isEmptyOrUnsupportedElement, isUnsupportedElement };
