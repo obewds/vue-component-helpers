@@ -25,6 +25,24 @@ head:
 
 
 
+### get-bg-palette-color.test.js
+
+<<< @/../tests/get-bg-palette-color.test.js
+
+
+
+### get-border-palette-color.test.js
+
+<<< @/../tests/get-border-palette-color.test.js
+
+
+
+### get-text-palette-color.test.js
+
+<<< @/../tests/get-text-palette-color.test.js
+
+
+
 ### is-empty-element.test.js
 
 <<< @/../tests/is-empty-element.test.js
