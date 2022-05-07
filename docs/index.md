@@ -26,19 +26,61 @@ npm install @obewds/vue-component-helpers --save-dev
 
 
 
+## extractValidPalettes()
+
+### Parameters
+
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt; type) argument  
+:arrow_right: Requires a single `String` (&lt;ObewdsTwConfigGroups&gt; type or a Top-Level Config Key) argument 
+
+| Paramater | Type      | Required  | Description |
+|-----------|-----------|-----------|-------------|
+| **tw**    | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **key**   | `String`  | Yes       | Expects a &lt;ObewdsTwConfigGroups&gt; type or a Top-Level Config Key (string) |
+
+### Returns
+
+:arrow_left: Returns an array with `String` values   
+
+### Example
+
+```html{4-5,7}
+<script setup lang="ts">
+
+    // import the default config object and helper
+    import { ObewdsTwConfig } from '@obewds/obewds-tw-config'
+    import { extractValidPalettes } from '@obewds/vue-component-helpers'
+
+    const bgPaletteNames = extractValidPalettes(ObewdsTwConfig, 'bg')
+
+    // returns an array of strings
+    // where each is a default bg palette name
+    // from the default ObewdsTwConfig object
+    console.log(bgPaletteNames)
+
+</script>
+```
+
+<br>
+
+
+
+
+
+
 ## getBgPaletteColor()
 
 ### Parameters
 
-:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt;) argument  
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt; type) argument  
 :arrow_right: Requires a single `String` (Background Palette Prop Value) argument  
 :arrow_right: Requires a single `String` (Background Palette Color Prop Value) argument  
 
-| Paramater           | Type      | Required  | Description |
-|---------------------|-----------|-----------|-------------|
-| **ObewdsTwConfig**  | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
-| **Bg Palette Prop** | `String`  | Yes       | Expects a Background Palette Prop Value |
-| **Bg Color Prop**   | `String`  | Yes       | Expects a Background Palette Color Prop Value |
+| Paramater   | Type      | Required  | Description |
+|-------------|-----------|-----------|-------------|
+| **config**  | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **palette** | `String`  | Yes       | Expects a Background Palette Prop Value |
+| **color**   | `String`  | Yes       | Expects a Background Palette Color Prop Value |
 
 ### Returns
 
@@ -69,15 +111,15 @@ npm install @obewds/vue-component-helpers --save-dev
 
 ### Parameters
 
-:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt;) argument  
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt; type) argument  
 :arrow_right: Requires a single `String` (Border Palette Prop Value) argument  
 :arrow_right: Requires a single `String` (Border Palette Color Prop Value) argument  
 
-| Paramater               | Type      | Required  | Description |
-|-------------------------|-----------|-----------|-------------|
-| **ObewdsTwConfig**      | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
-| **Border Palette Prop** | `String`  | Yes       | Expects a Border Palette Prop Value |
-| **Border Color Prop**   | `String`  | Yes       | Expects a Border Palette Color Prop Value |
+| Paramater   | Type      | Required  | Description |
+|-------------|-----------|-----------|-------------|
+| **config**  | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **palette** | `String`  | Yes       | Expects a Border Palette Prop Value |
+| **color**   | `String`  | Yes       | Expects a Border Palette Color Prop Value |
 
 ### Returns
 
@@ -108,15 +150,15 @@ npm install @obewds/vue-component-helpers --save-dev
 
 ### Parameters
 
-:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt;) argument  
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt; type) argument  
 :arrow_right: Requires a single `String` (Text Palette Prop Value) argument  
 :arrow_right: Requires a single `String` (Text Palette Color Prop Value) argument  
 
-| Paramater             | Type      | Required  | Description |
-|-----------------------|-----------|-----------|-------------|
-| **ObewdsTwConfig**    | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
-| **Text Palette Prop** | `String`  | Yes       | Expects a Text Palette Prop Value |
-| **Text Color Prop**   | `String`  | Yes       | Expects a Text Palette Color Prop Value |
+| Paramater   | Type      | Required  | Description |
+|-------------|-----------|-----------|-------------|
+| **config**  | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+| **palette** | `String`  | Yes       | Expects a Text Palette Prop Value |
+| **color**   | `String`  | Yes       | Expects a Text Palette Color Prop Value |
 
 ### Returns
 
