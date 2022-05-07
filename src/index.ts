@@ -1,3 +1,4 @@
+export { default as extractValidPalettes } from './helpers/extract-valid-palettes'
 export { default as getBgPaletteColor } from './helpers/get-bg-palette-color'
 export { default as getBorderPaletteColor } from './helpers/get-border-palette-color'
 export { default as getTextPaletteColor } from './helpers/get-text-palette-color'

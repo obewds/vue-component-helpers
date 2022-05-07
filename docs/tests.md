@@ -25,6 +25,12 @@ head:
 
 
 
+### extract-valid-palettes.test.js
+
+<<< @/../tests/extract-valid-palettes.test.js
+
+
+
 ### get-bg-palette-color.test.js
 
 <<< @/../tests/get-bg-palette-color.test.js

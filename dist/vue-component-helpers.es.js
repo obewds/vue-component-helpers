@@ -1,3 +1,10 @@
+function extractValidPalettes(tw, key) {
+  let output = [];
+  if (tw && tw[key] && tw[key].palettes) {
+    output = Object.keys(tw[key].palettes).map((key2) => key2);
+  }
+  return output;
+}
 function getBgPaletteColor(config, palette, color) {
   var _a, _b, _c, _d;
   if (config && ((_d = (_c = (_b = (_a = config == null ? void 0 : config.bg) == null ? void 0 : _a.palettes) == null ? void 0 : _b[palette]) == null ? void 0 : _c.colors) == null ? void 0 : _d[color])) {
@@ -74,4 +81,4 @@ function isUnsupportedElement(tag) {
     return false;
   }
 }
-export { getBgPaletteColor, getBorderPaletteColor, getTextPaletteColor, isEmptyElement, isEmptyOrUnsupportedElement, isUnsupportedElement };
+export { extractValidPalettes, getBgPaletteColor, getBorderPaletteColor, getTextPaletteColor, isEmptyElement, isEmptyOrUnsupportedElement, isUnsupportedElement };
