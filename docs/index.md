@@ -298,7 +298,42 @@ npm install @obewds/vue-component-helpers --save-dev
 
 
 
+## validPaletteProps()
 
+### Parameters
+
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt; type) argument  
+:arrow_right: Requires a single `String` (&lt;ObewdsTwConfigGroups&gt; type or a Top-Level Config Key) argument 
+
+| Paramater    | Type      | Required  | Description |
+|--------------|-----------|-----------|-------------|
+| **key**      | `String`  | Yes       | Expects a &lt;ObewdsTwConfigGroups&gt; type or a Top-Level Config Key (string) |
+| **twConfig** | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+
+### Returns
+
+:arrow_left: Returns an array with `String` values   
+
+### Example
+
+```html{4-5,7}
+<script setup lang="ts">
+
+    // import the default config object and helper
+    import { ObewdsTwConfig } from '@obewds/obewds-tw-config'
+    import { validPaletteProps } from '@obewds/vue-component-helpers'
+
+    const bgPaletteNames = validPaletteProps('bg', ObewdsTwConfig)
+
+    // returns an array of strings
+    // where each is a default bg palette name
+    // from the default ObewdsTwConfig object
+    console.log(bgPaletteNames)
+
+</script>
+```
+
+<br>
 
 ## Uninstall
 
