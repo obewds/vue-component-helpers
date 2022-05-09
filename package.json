@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-component-helpers",
   "description": "The @obewds/vue-component-helpers modular design system component for Vue.js",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/vue-component-helpers/",
   "license": "MIT",
@@ -41,6 +41,9 @@
   "dependencies": {
     "@obewds/obewds-tw-config": "^0.5.1",
     "@obewds/vue-validators": "^0.3.1",
+    "deepmerge": "^4.2.2"
+  },
+  "peerDependencies": {
     "vue": "^3.2.33"
   },
   "devDependencies": {

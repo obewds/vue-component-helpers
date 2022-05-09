@@ -298,6 +298,77 @@ npm install @obewds/vue-component-helpers --save-dev
 
 
 
+
+
+## mergeAppConfigWithDefaults()
+
+### Parameters
+
+:arrow_right: Requires a single `Object` (&lt;ObewdsTwConfig&gt; type) argument  
+
+| Paramater       | Type      | Required  | Description |
+|-----------------|-----------|-----------|-------------|
+| **appTwConfig** | `Object`  | Yes       | Expects a &lt;ObewdsTwConfig&gt; type object |
+
+### Returns
+
+:arrow_left: Returns an `Object` (`typeof ObewdsTwConfig`) value  
+
+### Examples
+
+Using a manually defined app OBE:WDS Tailwind config object:
+
+```html{3,5-15,17}
+<script setup lang="ts">
+
+    import { mergeAppConfigWithDefaults } from '@obewds/vue-component-helpers'
+
+    const myObewdsTwConfig = {
+        bg: {
+            palettes: {
+                "default": {
+                    colors: {
+                        primary: "text-indigo-500 dark:text-indigo-200"
+                    }
+                }
+            }
+        }
+    }
+
+    const tw = mergeAppConfigWithDefaults(myObewdsTwConfig)
+
+    // returns an object with default @obewds/obewds-tw-config data
+    // merged into the data provided in myObewdsTwConfig
+    console.log(tw)
+
+</script>
+```
+
+Using a `@obewds/vue-component-helpers` JSON config file:
+
+```html{3,6,8}
+<script setup lang="ts">
+
+    import { mergeAppConfigWithDefaults } from '@obewds/vue-component-helpers'
+    // import your customized app config version of an OBE:WDS Tailwind config object
+    // (generated from scripts in the @obewds/obewds-tw-config package)
+    import appTwConfig from '../obewds.tw.config.json'
+
+    const tw = mergeAppConfigWithDefaults(appTwConfig)
+
+    // returns an object with default @obewds/obewds-tw-config data
+    // merged into the data provided in appTwConfig
+    console.log(tw)
+
+</script>
+```
+
+<br>
+
+
+
+
+
 ## validPaletteProps()
 
 ### Parameters
