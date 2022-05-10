@@ -32,11 +32,19 @@ export default defineConfig({
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled into your library
-      external: ['vue'],
+      external: [
+        'vue',
+        '@obewds/obewds-tw-config',
+        '@obewds/vue-validators',
+        'deepmerge',
+      ],
       output: {
         // Provide global variables to use in the UMD build for externalized deps
         globals: {
           vue: 'Vue',
+          '@obewds/obewds-tw-config': 'ObewdsTwConfig',
+          '@obewds/vue-validators': 'VueValidators',
+          'deepmerge': 'deepmerge',
         },
         //sourcemap: true,
       },
