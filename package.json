@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-component-helpers",
   "description": "The @obewds/vue-component-helpers modular design system component for Vue.js",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/vue-component-helpers/",
   "license": "MIT",
@@ -36,15 +36,14 @@
     "pkg:login": "npm adduser",
     "pkg:publish": "npm publish --access public",
     "changelog": "auto-changelog --package --unreleased --backfill-limit 20",
-    "git:tag" : "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
+    "git:tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
     "publish:prep": "npx rimraf dist && npm run pkg:tsbundle",
     "publish:package": "npm run publish:prep && npm run pkg:org && npm run pkg:login && npm run pkg:publish && npm run git:tag && npm run changelog"
   },
-  "peerDependencies": {
-    "@obewds/obewds-tw-config": "^0.6.2",
+  "dependencies": {
+    "@obewds/obewds-tw-config": "^0.7.1",
     "@obewds/vue-validators": "^0.3.2",
-    "deepmerge": "^4.2.2",
-    "vue": "^3.2.33"
+    "deepmerge": "^4.2.2"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.2",
@@ -53,14 +52,14 @@
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "@types/lodash.merge": "^4.6.7",
-    "@types/node": "^17.0.32",
+    "@types/node": "^17.0.34",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/test-utils": "^2.0.0-rc.20",
     "auto-changelog": "^2.4.0",
     "autoprefixer": "^10.4.7",
-    "c8": "^7.11.0",
+    "c8": "^7.11.3",
     "fs-extra": "^10.1.0",
-    "happy-dom": "^3.2.0",
+    "happy-dom": "^3.2.2",
     "lodash": "^4.17.21",
     "postcss": "^8.4.13",
     "rimraf": "^3.0.2",
@@ -68,9 +67,9 @@
     "typescript": "^4.6.4",
     "vite": "^2.9.9",
     "vitepress": "^0.22.4",
-    "vitest": "^0.12.4",
+    "vitest": "^0.12.6",
     "vue": "^3.2.33",
-    "vue-tsc": "^0.34.12"
+    "vue-tsc": "^0.34.15"
   },
   "repository": {
     "type": "git",
