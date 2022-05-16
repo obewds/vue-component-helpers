@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-component-helpers",
   "description": "The @obewds/vue-component-helpers modular design system component for Vue.js",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/vue-component-helpers/",
   "license": "MIT",
