@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-component-helpers",
   "description": "The @obewds/vue-component-helpers modular design system component for Vue.js",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/vue-component-helpers/",
   "license": "MIT",
@@ -40,8 +40,8 @@
     "generate": "npx rimraf dist && npm run pkg:tsbundle && npm run changelog"
   },
   "dependencies": {
-    "@obewds/obewds-tw-config": "^1.1.1",
-    "@obewds/vue-validators": "^1.2.3",
+    "@obewds/obewds-tw-config": "^1.1.2",
+    "@obewds/vue-validators": "^1.2.4",
     "deepmerge": "^4.2.2"
   },
   "devDependencies": {
@@ -50,24 +50,24 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "@types/lodash.merge": "^4.6.7",
-    "@types/node": "^18.7.15",
-    "@vitejs/plugin-vue": "^3.1.0",
-    "@vitest/coverage-c8": "^0.23.1",
-    "@vue/test-utils": "^2.0.2",
+    "@types/node": "^18.8.3",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitest/coverage-c8": "^0.23.4",
+    "@vue/test-utils": "^2.1.0",
     "auto-changelog": "^2.4.0",
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.12",
     "fs-extra": "^10.1.0",
-    "happy-dom": "^6.0.4",
+    "happy-dom": "^7.1.1",
     "lodash": "^4.17.21",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.17",
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.1.8",
-    "typescript": "^4.8.2",
-    "vite": "^3.1.0",
-    "vitepress": "^1.0.0-alpha.13",
-    "vitest": "^0.23.1",
-    "vue": "^3.2.38",
-    "vue-tsc": "^0.40.8"
+    "typescript": "^4.8.4",
+    "vite": "^3.1.6",
+    "vitepress": "^1.0.0-alpha.19",
+    "vitest": "^0.23.4",
+    "vue": "^3.2.40",
+    "vue-tsc": "^0.40.13"
   },
   "repository": {
     "type": "git",
