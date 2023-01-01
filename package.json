@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@obewds/obewds-tw-config": "^1.1.2",
-    "@obewds/vue-validators": "^1.2.4",
+    "@obewds/vue-validators": "^1.2.5",
     "deepmerge": "^4.2.2"
   },
   "devDependencies": {
